@@ -73,7 +73,7 @@ impl Escrow {
         self.amount_to_receive = amount.to_le_bytes();
     }
 
-    #[allow(dead-code)]
+    #[allow(dead_code)]
     pub fn amount_to_give(&self) -> u64 {
         u64::from_le_bytes(self.amount_to_give)
     }
